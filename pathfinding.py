@@ -70,6 +70,13 @@ def main():
     target_box = None
     start_box_set = False
 
+    # Fountain in Front of Provident Credit Union Event Center
+    for x in range(360, 400):
+        for y in range(750, 770):
+            i = x // box_width
+            j = y // box_height
+            grid[i][j].wall = True
+            
     #San José State University Central Classroom Building
     for x in range(150):
         for y in range(130):
